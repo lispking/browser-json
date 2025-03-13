@@ -1,40 +1,42 @@
-# JSON Formatter Chrome 扩展
+# JSON Formatter Chrome Extension
 
-一个美观、实用的Chrome扩展，用于格式化和高亮显示JSON内容。采用VS Code风格的暗色主题，提供交互式的JSON查看体验。
+[English](README.md) | [简体中文](README.zh.md)
 
-## ✨ 功能特点
+A beautiful and practical Chrome extension for formatting and highlighting JSON content. Features a VS Code-style dark theme and provides an interactive JSON viewing experience.
 
-- 🎨 自动检测并格式化页面中的JSON内容
-- 🌗 VS Code风格的暗色主题
-- 🔍 可折叠/展开的JSON节点
-- 📊 显示数组和对象的元素数量
-- 💅 美观的语法高亮
-- 🖱️ 悬停高亮显示JSON属性
-- ⚡ 快速展开/折叠所有节点
+## ✨ Features
 
-## 📦 安装方法
+- 🎨 Automatically detects and formats JSON content on pages
+- 🌗 VS Code-style dark theme
+- 🔍 Collapsible/expandable JSON nodes
+- 📊 Display of array and object element counts
+- 💅 Beautiful syntax highlighting
+- 🖱️ Hover highlighting for JSON properties
+- ⚡ Quick expand/collapse all nodes
 
-1. 下载或克隆此仓库到本地
-2. 打开Chrome浏览器，进入扩展管理页面（chrome://extensions/）
-3. 开启右上角的「开发者模式」
-4. 点击「加载已解压的扩展程序」
-5. 选择本项目的文件夹
+## 📦 Installation
 
-## 🚀 使用方法
+1. Download or clone this repository
+2. Open Chrome browser and navigate to extensions page (chrome://extensions/)
+3. Enable "Developer mode" in the top right corner
+4. Click "Load unpacked"
+5. Select the project folder
 
-1. 安装扩展后，访问任何包含JSON内容的页面
-2. 扩展会自动检测并格式化JSON内容
-3. 使用左侧的箭头按钮（▶/▼）展开或折叠JSON节点
-4. 点击扩展图标可以使用「全部展开」或「全部折叠」功能
+## 🚀 Usage
 
-## 🛠️ 技术实现
+1. After installation, visit any page containing JSON content
+2. The extension will automatically detect and format JSON content
+3. Use the arrow buttons (▶/▼) on the left to expand or collapse JSON nodes
+4. Click the extension icon to use "Expand All" or "Collapse All" features
 
-- 使用原生JavaScript开发，无需任何外部依赖
-- 采用Chrome Extension Manifest V3规范
-- 实现了递归的JSON解析和DOM渲染
-- 使用CSS实现平滑的动画过渡效果
-- 优化的性能，支持处理大型JSON数据
+## 🛠️ Technical Implementation
 
-## 📄 许可证
+- Developed using vanilla JavaScript, no external dependencies
+- Implements Chrome Extension Manifest V3 specification
+- Recursive JSON parsing and DOM rendering
+- Smooth animation transitions using CSS
+- Optimized performance for handling large JSON data
 
-本项目基于 Apache-2.0 许可证开源，详见[LICENSE](LICENSE)文件。
+## 📄 License
+
+This project is open source under the Apache-2.0 License. See the [LICENSE](LICENSE) file for details.
