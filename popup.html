@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 320px;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+      background-color: #1e1e1e;
+      color: #d4d4d4;
+    }
+    .title-bar {
+      padding: 8px 12px;
+      background-color: #252526;
+      border-bottom: 1px solid #3c3c3c;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .title {
+      font-size: 13px;
+      font-weight: 500;
+      color: #cccccc;
+    }
+    .controls {
+      padding: 12px;
+      display: grid;
+      gap: 8px;
+    }
+    button {
+      padding: 6px 12px;
+      background-color: #2d2d2d;
+      color: #cccccc;
+      border: 1px solid #3c3c3c;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #3c3c3c;
+      border-color: #4c4c4c;
+    }
+    button:active {
+      background-color: #094771;
+      border-color: #094771;
+    }
+    button svg {
+      width: 14px;
+      height: 14px;
+      margin-right: 6px;
+      fill: currentColor;
+    }
+  </style>
+</head>
+<body>
+  <div class="title-bar">
+    <div class="title">JSON Formatter</div>
+  </div>
+  <div class="controls">
+    <button id="formatJson">
+      <svg viewBox="0 0 16 16">
+        <path d="M4.5 4.5l.944-.944a.5.5 0 0 1 .707 0L10.5 7.904l-4.349 4.348a.5.5 0 0 1-.707 0L4.5 11.308V4.5z"/>
+      </svg>
+      Format JSON
+    </button>
+    <button id="expandAll">
+      <svg viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM6.5 5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1zm3 3h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1z"/>
+      </svg>
+      Expand All
+    </button>
+    <button id="collapseAll">
+      <svg viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+      </svg>
+      Collapse All
+    </button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
