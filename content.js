@@ -66,13 +66,13 @@ function createFormattedView(obj, level = 0) {
   content.style.display = 'block';
   content.style.overflow = 'hidden';
   content.style.transition = 'max-height 0.3s ease-in-out';
-  content.style.maxHeight = '1000px';
+  content.style.maxHeight = 'none';
   content.style.marginLeft = '0';
   content.style.paddingLeft = '0';
   
   button.onclick = () => {
     const isExpanded = content.style.maxHeight !== '0px';
-    content.style.maxHeight = isExpanded ? '0px' : '1000px';
+    content.style.maxHeight = isExpanded ? '0px' : 'none';
     button.textContent = isExpanded ? '▶' : '▼';
     button.style.transform = isExpanded ? 'rotate(0deg)' : 'rotate(90deg)';
   };
@@ -207,7 +207,7 @@ function expandAll() {
   const buttons = document.querySelectorAll('.toggle-button');
   buttons.forEach(button => {
     const content = button.nextElementSibling.nextElementSibling.nextElementSibling;
-    content.style.maxHeight = '1000px';
+    content.style.maxHeight = 'none';
     button.textContent = '▼';
     button.style.transform = 'rotate(90deg)';
   });
